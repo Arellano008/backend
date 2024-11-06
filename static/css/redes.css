@@ -1,0 +1,42 @@
+#redes-sociales {
+    padding: 50px 0;
+}
+
+#redes-sociales h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#redes-sociales .card {
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+#redes-sociales .card:hover {
+    transform: translateY(-10px);
+}
+
+#redes-sociales .card-title {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+#redes-sociales .card-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#redes-sociales .card-body ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#redes-sociales .card-img-top {
+    
+    height: 150px;
+    object-fit: contain;
+    padding: 20px;
+}

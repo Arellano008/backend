@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Escaneo Ploycam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/scan.css')}}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='images/portafolio.png')}}" alt="logo" width="100px">
+            Mi Portafolio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+               <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.canva.com/design/DAGPJ-R60DA/s3460CwfZzebjJs6CkK9eg/view?utm_content=DAGPJ-R60DA&utm_campaign=designshare&utm_medium=link&utm_source=editor">Stack Overflow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="primerpagina.html">Mi primera página web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="quiensoy.html">Quién soy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginagit.html"> GITHUB</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginavr.html"> VR,AR y ER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginaescaneo.html"> Escaneo Polycam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginajuego.html"> Juego del Ahorcado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginaredes.html"> Redes Sociales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginasketchlab.html"> Sketchlab</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenido de Escaneo de un objeto mediante Polycam -->
+<div class="container mt-5">
+    <h2 class="text-center">¿Cómo escanear un objeto utilizando Polycam en iPhone?</h2>
+    <p class="text-center">
+        Polycam es una aplicación popular que permite a los usuarios escanear objetos físicos en 3D utilizando su iPhone. A continuación, te mostramos los pasos básicos para realizar un escaneo con Polycam.
+    </p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3> <strong>1: Descargar la aplicación Polycam </strong></h3>
+            <p>
+                La aplicación Polycam está disponible en la App Store de iPhone. Simplemente busca "Polycam" y descárgala. La versión gratuita permite escanear objetos con alta calidad, pero también hay opciones de pago para características adicionales.
+            </p>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="image-container">
+            <img src="{{ url_for('static', filename='images/paso1.jpeg')}}" class="img-fluid rounded" alt="Polycam en App Store">
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6 text-center">
+            <div class="image-container">
+            <img src="{{ url_for('static', filename='images/paso2.jpeg')}}" class="img-fluid rounded" alt="Escaneando un objeto con Polycam">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3> <strong> 2: Iniciar el escaneo </strong></h3>
+            <p>
+                Abre la aplicación y selecciona la opción de escaneo 3D. Coloca el objeto que deseas escanear en un lugar bien iluminado y comienza a mover el iPhone alrededor del objeto para capturar todas sus partes. Asegúrate de cubrir el objeto desde diferentes ángulos.
+            </p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3> <strong>3: Proceso y exportación </strong></h3>
+            <p>
+                Una vez que hayas terminado de escanear el objeto, la aplicación procesará los datos para crear un modelo 3D detallado. Después, puedes exportar el modelo en diferentes formatos (OBJ, STL, etc.) para usar en aplicaciones de diseño o impresión 3D.
+            </p>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="image-container">
+            <img src="{{ url_for('static', filename='images/paso3.jpeg')}}" class="img-fluid rounded" alt="Exportar modelo 3D en Polycam">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contacto -->
+<footer class="bg-dark text-white text-center mt-5 p-3" id="contacto">
+    <h4>Contacto</h4>
+    <p>Correo: 201251@iberopuebla.mx</p>
+    <p> Numero: 2721321132 </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/assets/javascript/script.js"></script>
+</body>
+</html>

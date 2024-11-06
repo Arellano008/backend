@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaVR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/vr.css')}}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='images/portafolio.png')}}" alt="logo" width="100px">
+            Mi Portafolio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+
+              <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.canva.com/design/DAGPJ-R60DA/s3460CwfZzebjJs6CkK9eg/view?utm_content=DAGPJ-R60DA&utm_campaign=designshare&utm_medium=link&utm_source=editor">Stack Overflow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="primerpagina.html">Mi primera página web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="quiensoy.html">Quién soy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginagit.html"> GITHUB</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginavr.html"> VR,AR y ER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginaescaneo.html"> Escaneo Polycam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginajuego.html"> Juego del Ahorcado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginaredes.html"> Redes Sociales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="paginasketchlab.html"> Sketchlab</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenido de VR y AR -->
+<div class="container mt-5">
+    <h1 id="PaginaVR" class="text-center">Realidad Virtual (VR) y Realidad Aumentada (AR)</h1>
+    
+    <!-- Explicacion de VR -->
+<div class="row mt-4">
+    <div class="col-md-6">
+        <h2>¿Qué es la Realidad Virtual (VR)?</h2>
+        <p>
+            La <strong>Realidad Virtual (VR)</strong> es una tecnología que permite crear un entorno simulado completamente inmersivo utilizando dispositivos como visores o gafas VR. 
+            Este entorno virtual es capaz de replicar experiencias sensoriales, como la vista, el sonido y el tacto, sumergiendo al usuario en un mundo simulado.
+        </p>
+    </div>
+    <div class="col-md-6 text-center">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/RV.jpg')}}" class="img-fluid" alt="Realidad Virtual">
+        </div>
+    </div>
+</div>
+
+<!-- Explicacion de AR -->
+<div class="row mt-4">
+    <div class="col-md-6 text-center">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/RA.avif')}}" class="img-fluid" alt="Realidad Aumentada">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h2>¿Qué es la Realidad Aumentada (AR)?</h2>
+        <p>
+            La <strong>Realidad Aumentada (AR)</strong> es una tecnología que superpone elementos virtuales en el mundo real a través de un dispositivo como un smartphone o unas gafas especiales. 
+            A diferencia de la VR, la AR no reemplaza el entorno real, sino que lo mejora añadiendo capas de información digital o gráficos en tiempo real.
+        </p>
+    </div>
+</div>
+
+<!--Explicacion de ER-->
+<div class="row mt-4">
+    <div class="col-md-6">
+        <h2>¿Qué es la Realidad Extendida (ER)?</h2>
+        <p>
+            La <strong>Realidad Extendida (ER)</strong> es un término que engloba todas las tecnologías inmersivas, como la Realidad Virtual (VR), la Realidad Aumentada (AR), y la Realidad Mixta (MR). 
+            Estas tecnologías combinan entornos virtuales y elementos del mundo real para crear experiencias interactivas y enriquecidas. 
+            La ER permite a los usuarios interactuar con ambientes simulados o superpuestos en la realidad, ampliando el concepto de interacción entre el mundo físico y digital.
+        </p>
+    </div>
+    <div class="col-md-6 text-center">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/ER.jpg')}}" class="img-fluid" alt="Realidad Extendida">
+        </div>
+    </div>
+</div>
+
+
+    <!-- Imagen interactiva -->
+    <div class="row mt-5">
+        <h2 class="text-center mb-4">Ejemplo de un uso de Realidad Virtual</h2>
+        <div class="col-12 text-center">
+            <div class="interactive-img-container">
+                <img src="{{ url_for('static', filename='images/Yo.jpeg')}}" class="img-fluid rounded" alt="Contenido Interactivo">
+                <div class="overlay">
+                    <div class="text">!Probando por primera vez la Realidad Virtual!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contacto -->
+<footer class="bg-dark text-white text-center mt-5 p-3" id="contacto">
+    <h4>Contacto</h4>
+    <p>Correo: 201251@iberopuebla.mx</p>
+    <p> Numero: 2721321132 </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/assets/javascript/script.js"></script>
+</body>
+</html>
+

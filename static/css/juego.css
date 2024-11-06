@@ -1,0 +1,37 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+#hangman-drawing {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 1.5rem;
+}
+
+#word {
+    letter-spacing: 0.5rem;
+}
+
+#guess-input {
+    width: 50px;
+    text-align: center;
+}
+
+#message {
+    font-weight: bold;
+    color: red;
+}

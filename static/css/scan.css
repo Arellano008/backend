@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.image-container img {
+    border-radius: 10px;    /* Bordes redondeados */
+    width: 80%;             /* Tamaño más pequeño (ajustable) */
+    max-width: 500px;       /* Tamaño máximo permitido */
+    margin: 0 auto;         /* Centrado horizontal */
+    display: block;         /* Asegura que la imagen se centre */
+}

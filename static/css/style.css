@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.image-container img {
+    border-radius: 10px;    /* Bordes redondeados */
+    width: 80%;             /* Tamaño más pequeño (ajustable) */
+    max-width: 500px;       /* Tamaño máximo permitido */
+    margin: 0 auto;         /* Centrado horizontal */
+    display: block;         /* Asegura que la imagen se centre */
+}
+
+.interactive-img-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.interactive-img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.interactive-img-container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interactive-img-container:hover .overlay {
+    opacity: 1;
+}
+
+.interactive-img-container .text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
