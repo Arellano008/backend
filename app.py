@@ -39,5 +39,9 @@ def pv():
 def pp():
     return render_template('quiensoy.html')
 
+@app.route('/paginateach.html')
+def pp():
+    return render_template('paginateach.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
