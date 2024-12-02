@@ -59,11 +59,10 @@
                       Tercer Parcial
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Backend</a></li>
-                      <li><a class="dropdown-item" href="#">Curso Integra</a></li>
+                      <li><a class="dropdown-item" href="backend.html">Backend</a></li>
+                      <li><a class="dropdown-item" href="cursointegra.html">Curso Integra</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="paginaflutter.html">Flutterflow</a></li>
-                      <li><a class="dropdown-item" href="#">Render</a></li>
                       <li><a class="dropdown-item" href="paginateach.html">Teachable Machine</a></li>
                     </ul>
                   </li>
@@ -76,39 +75,123 @@
 </nav>
 
 <!-- Secciones -->
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <h2>Este es mi Portafolio</h2>
-            <p>Aca se encuentran todos los trabajos hechos durante el primer parcial.</p>
+<!-- Secciones: Carrusel -->
+<div id="seccionesCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Primer Parcial -->
+      <div class="carousel-item active">
+        <a href="https://www.canva.com/design/DAGPJ-R60DA/s3460CwfZzebjJs6CkK9eg/view?utm_content=DAGPJ-R60DA&utm_campaign=designshare&utm_medium=link&utm_source=editor">
+          <img src="{{ url_for('static', filename='images/stackover.jpg')}}" class="d-block w-100" alt="StackOverflow">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>StackOverflow</h5>
         </div>
+      </div>
+  
+      <div class="carousel-item">
+        <a href="primerpagina.html">
+          <img src="{{ url_for('static', filename='images/miprimerapagina.png')}}" class="d-block w-100" alt="Mi Primera Página Web">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>Mi Primera Página Web</h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <a href="quiensoy.html">
+          <img src="{{ url_for('static', filename='images/quiensoy.png')}}" class="d-block w-100" alt="Quién Soy">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>¿Quién Soy?</h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <a href="paginagit.html">
+          <img src="{{ url_for('static', filename='images/github.png')}}" class="d-block w-100" alt="GitHub">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>GitHub</h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <a href="paginavr.html">
+          <img src="{{ url_for('static', filename='images/realidad.jpg')}}" class="d-block w-100" alt="VR, AR y ER">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>VR, AR y ER</h5>
+        </div>
+      </div>
+  
+      <!-- Segundo Parcial -->
+      <div class="carousel-item">
+        <a href="paginaescaneo.html">
+          <img src="{{ url_for('static', filename='images/polycam.png')}}" class="d-block w-100" alt="Escaneo Polycam">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>Escaneo Polycam</h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <a href="paginasketchlab.html">
+          <img src="{{ url_for('static', filename='images/sketchlab.jpeg')}}" class="d-block w-100" alt="SketchLab">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>SketchFab</h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <a href="paginajuego.html">
+          <img src="{{ url_for('static', filename='images/ahorcado.jpg')}}" class="d-block w-100" alt="Juego del Ahorcado">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>Juego del Ahorcado</h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <a href="paginaredes.html">
+          <img src="{{ url_for('static', filename='images/redes.jpg')}}" class="d-block w-100" alt="Redes Sociales">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>Redes Sociales</h5>
+        </div>
+      </div>
+  
+      <!-- Tercer Parcial -->
+      <div class="carousel-item">
+        <a href="paginaflutter.html">
+          <img src="{{ url_for('static', filename='images/flutter.png')}}" class="d-block w-100" alt="FlutterFlow">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>FlutterFlow</h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <a href="paginateach.html">
+          <img src="{{ url_for('static', filename='images/Teachable.jpeg')}}" class="d-block w-100" alt="Teachable Machine">
+        </a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2">
+          <h5>Teachable Machine</h5>
+        </div>
+      </div>
+  
     </div>
-
-    <div class="row mt-5">
-        <div class="col-md-4">
-            <h3>Stack Overflow</h3>
-            <div class="image-container">
-            <img src="https://jessehouwing.net/content/images/2018/07/stackoverflow-1.png" class="img-fluid rounded" alt="Stack Overflow">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <h3>Mi Primera Página Web</h3>
-            <div class="image-container">
-            <img src="https://th.bing.com/th/id/R.6b2e1c9f3072662421ab7a47907e4ab1?rik=Vs0aRXLuIF9xjQ&riu=http%3a%2f%2felearningmasters.galileo.edu%2fwp-content%2fuploads%2f2018%2f05%2f01-1.jpg&ehk=7VE2xfmYgpx8I%2bevIXl9SzyeCR6xRE38vuLuYyUhwtk%3d&risl=&pid=ImgRaw&r=0" class="img-fluid rounded" alt="primera pagina">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <h3>Quién Soy</h3>
-            <div class="interactive-img-container">
-            <img src="{{ url_for('static', filename='images/yoxd.jpeg')}}" class="img-fluid rounded" alt="Yo">
-            <div class="overlay">
-                <div class="text"> Soy Marshmello Negro</div>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#seccionesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#seccionesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+  
 <!-- Contacto -->
 <footer class="bg-dark text-white text-center mt-5 p-3" id="contacto">
     <h4>Contacto</h4>

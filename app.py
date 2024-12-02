@@ -40,8 +40,24 @@ def pp():
     return render_template('quiensoy.html')
 
 @app.route('/paginateach.html')
-def pp():
+def pt():
     return render_template('paginateach.html')
+
+@app.route('/paginaflutter.html')
+def pf():
+    return render_template('paginaflutter.html')
+
+@app.route('/cursointegra.html')
+def ci():
+    return render_template('cursointegra.html')
+
+@app.route('/backend.html')
+def ba():
+    return render_template('backend.html')
+
+@app.route('/index.html')
+def casa():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

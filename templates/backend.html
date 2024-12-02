@@ -1,11 +1,11 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Redes Sociales</title>
+    <title>Entorno Virtual</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/redes.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/backend.css')}}">
 </head>
 <body>
 
@@ -22,9 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
 
-
-              
-               
+                
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                 </li>
@@ -61,86 +59,92 @@
                       Tercer Parcial
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Backend</a></li>
-                      <li><a class="dropdown-item" href="#">Curso Integra</a></li>
+                      <li><a class="dropdown-item" href="backend.html">Backend</a></li>
+                      <li><a class="dropdown-item" href="cursointegra.html">Curso Integra</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="paginaflutter.html">Flutterflow</a></li>
-                      <li><a class="dropdown-item" href="#">Render</a></li>
                       <li><a class="dropdown-item" href="paginateach.html">Teachable Machine</a></li>
                     </ul>
                   </li>
 
+                
+            </ul>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Redes Sociales -->
-<section id="redes-sociales" class="container mt-5">
-    <h2 class="text-center">Tecnologías detrás de las Redes Sociales</h2>
-    <div class="row mt-4">
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="{{ url_for('static', filename='images/facebook.png')}}" class="card-img-top" alt="Facebook">
+<!--Seccion de Backend y Entorno Virtual-->
+<div class="container mt-5">
+    <h1 class="text-center section-title">Backend y Entorno Virtual</h1>
+    <p class="section-description">
+        Un entorno virtual en Python es una herramienta que permite aislar las dependencias de un proyecto del entorno global del sistema. Esto es especialmente útil cuando trabajas en múltiples proyectos con diferentes requerimientos de paquetes y versiones.
+    </p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='images/entornovirtual.jpg')}}" class="img-fluid rounded shadow backend-image" alt="Backend">
+        </div>
+        <div class="col-md-6">
+            <h3 class="subsection-title">¿Por qué usar un entorno virtual?</h3>
+            <ul class="list-benefits">
+                <li>Evita conflictos de versiones entre proyectos.</li>
+                <li>Facilita la portabilidad del proyecto.</li>
+                <li>Mantiene el entorno global limpio.</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 class="text-center steps-title">Pasos para Configurar un Entorno Virtual y Flask</h2>
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow step-card">
                 <div class="card-body">
-                    <h3 class="card-title">Facebook</h3>
-                    <p><strong>Lanzamiento:</strong> 2004, EE. UU.</p>
-                    <p><strong>Lenguajes y Tecnologías:</strong></p>
-                    <ul>
-                        <li><strong>Frontend:</strong> React.js</li>
-                        <li><strong>Backend:</strong> Hack (un dialecto de PHP)</li>
-                        <li><strong>Base de datos:</strong> MySQL, Cassandra</li>
-                        <li><strong>Infraestructura:</strong> Hadoop, BigPipe</li>
-                    </ul>
-                    <p>
-                        Facebook utiliza <strong>React</strong>, una biblioteca de JavaScript para crear interfaces de usuario interactivas y escalables. Su backend está basado en Hack, una versión avanzada de PHP.
-                    </p>
+                    <h5 class="step-title">1. Crear un entorno virtual</h5>
+                    <p>Ejecuta el siguiente comando para crear un entorno virtual:</p>
+                    <code>python -m venv nombre_del_entorno</code>
+                    <p class="mt-3">Si no aparece nada en el terminal, significa que se ha creado exitosamente.</p>
                 </div>
             </div>
         </div>
         
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="{{ url_for('static', filename='images/instagram.png')}}" class="card-img-top" alt="Instagram">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow step-card">
                 <div class="card-body">
-                    <h3 class="card-title">Instagram</h3>
-                    <p><strong>Lanzamiento:</strong> 2010, EE. UU.</p>
-                    <p><strong>Lenguajes y Tecnologías:</strong></p>
-                    <ul>
-                        <li><strong>Frontend:</strong> React Native (para la app móvil)</li>
-                        <li><strong>Backend:</strong> Python (Django)</li>
-                        <li><strong>Base de datos:</strong> PostgreSQL</li>
-                        <li><strong>Infraestructura:</strong> Amazon Web Services (AWS)</li>
-                    </ul>
-                    <p>
-                        Instagram utiliza <strong>React Native</strong> para el desarrollo móvil, lo que permite compartir código entre las aplicaciones iOS y Android. El backend está basado en <strong>Django</strong>, un framework de Python.
-                    </p>
+                    <h5 class="step-title">2. Activar el entorno virtual</h5>
+                    <p>Para activarlo, utiliza el siguiente comando:</p>
+                    <code>scripts/activate</code>
+                    <p class="mt-3">Una vez activado, verás el nombre del entorno al inicio del prompt.</p>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="{{ url_for('static', filename='images/Xlogo.jpg')}}" class="card-img-top" alt="Twitter">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow step-card">
                 <div class="card-body">
-                    <h3 class="card-title">Twitter o X actualmente</h3>
-                    <p><strong>Lanzamiento:</strong> 2006, EE. UU.</p>
-                    <p><strong>Lenguajes y Tecnologías:</strong></p>
-                    <ul>
-                        <li><strong>Frontend:</strong> JavaScript (jQuery en sus inicios)</li>
-                        <li><strong>Backend:</strong> Scala, Java</li>
-                        <li><strong>Base de datos:</strong> MySQL</li>
-                        <li><strong>Infraestructura:</strong> Mesos, Aurora</li>
-                    </ul>
-                    <p>
-                        Twitter utiliza <strong>Scala</strong> en su backend para manejar grandes volúmenes de datos y un alto tráfico en tiempo real. En sus primeros días, utilizaba jQuery en el frontend, pero ha evolucionado con herramientas más modernas.
-                    </p>
+                    <h5 class="step-title">3. Instalar Flask</h5>
+                    <p>Una vez activado el entorno, instala Flask con:</p>
+                    <code>pip install Flask</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow step-card">
+                <div class="card-body">
+                    <h5 class="step-title">4. Ejecutar la aplicación</h5>
+                    <p>Ejecuta tu aplicación con el siguiente comando:</p>
+                    <code>python app.py</code>
+                    <p class="mt-3">Asegúrate de verificar que todos los enlaces funcionen correctamente en tu HTML.</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
+  
 <!-- Contacto -->
 <footer class="bg-dark text-white text-center mt-5 p-3" id="contacto">
     <h4>Contacto</h4>
@@ -149,6 +153,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="assets/js/script.js"></script>
+<script src="/assets/javascript/script.js"></script>
 </body>
 </html>

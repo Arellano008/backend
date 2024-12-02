@@ -1,7 +1,9 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-size: 20px;
 }
+
 
 p {
     font-size: 20px;
@@ -16,50 +18,50 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-.image-container img {
-    border-radius: 10px;    /* Bordes redondeados */
-    width: 80%;             /* Tamaño más pequeño (ajustable) */
-    max-width: 500px;       /* Tamaño máximo permitido */
-    margin: 0 auto;         /* Centrado horizontal */
-    display: block;         /* Asegura que la imagen se centre */
+/* Estilo general del carrusel */
+.carousel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.interactive-img-container {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+/* Imágenes del carrusel */
+.carousel img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del carrusel */
+    height: auto; /* Mantiene la proporción original */
+    max-height: 700px; /* Limita la altura para mantener el carrusel en proporción */
+    object-fit: contain; /* Las imágenes se ajustan dentro del carrusel sin recortarse */
+   
+}
+/* Capciones del carrusel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 15px;
 }
 
-.interactive-img-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.interactive-img-container .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.interactive-img-container:hover .overlay {
-    opacity: 1;
-}
-
-.interactive-img-container .text {
-    color: white;
-    font-size: 20px;
+/* Texto de la capción */
+.carousel-caption h5 {
+    font-size: 1.8rem;
     font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators [data-bs-target] {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target].active {
+    background-color: #007bff;
 }

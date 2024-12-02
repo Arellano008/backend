@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size:  20 px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px; /* Ajusta el tamaño de la letra */
+}
+
+.section-title {
+    color:darkred;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.backend-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.subsection-title {
+    color:dodgerblue;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.list-benefits {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.section-divider {
+    margin: 40px 0;
+    border-top: 2px solid #ddd;
+}
+
+.steps-title {
+    color: #17a2b8;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.step-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step-title {
+    color:coral;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+

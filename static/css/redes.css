@@ -40,3 +40,8 @@
     object-fit: contain;
     padding: 20px;
 }
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+

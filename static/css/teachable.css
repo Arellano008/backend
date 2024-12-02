@@ -1,9 +1,22 @@
-/* Estilo general */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-size: 20px;
 }
 
+p {
+    font-size: 20px;
+}
+
+
+h1, h2, h3 {
+    color: #333;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 .navbar-brand img {
     border-radius: 50%;
 }
@@ -30,12 +43,11 @@ body {
     margin: 20px 0;
 }
 
-#label-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#label-container .progress {
+    margin: 10px 0;
+    width: 80%;
+    text-align: left;
 }
-
 .label-item {
     font-size: 1.2rem;
     font-weight: bold;
@@ -46,6 +58,12 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 80%;
     text-align: center;
+}
+
+#label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Botón */
@@ -65,8 +83,10 @@ body {
     cursor: pointer;
 }
 
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.image-container img {
+    border-radius: 10px;    /* Bordes redondeados */
+    width: 80%;             /* Tamaño más pequeño (ajustable) */
+    max-width: 500px;       /* Tamaño máximo permitido */
+    margin: 0 auto;         /* Centrado horizontal */
+    display: block;         /* Asegura que la imagen se centre */
 }
